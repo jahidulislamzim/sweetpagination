@@ -1,0 +1,28 @@
+{
+  "name": "sweet-pagination",
+  "version": "0.1.1",
+  "description": "This is a complete Pagination React Component Library",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel Components --out-file index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jahidulislamzim/sweetpagination"
+  },
+  "keywords": [
+    "Pagination",
+    "SweetPagination",
+    "React Pagination"
+  ],
+  "author": "Jahidul Islam  <contact@jahidulislamzim.com> (http://jahidulislamzim.com/)",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7"
+  }
+  
+}

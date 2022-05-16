@@ -1,0 +1,26 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pageItem {
+    padding: 1rem;
+    list-style: none;
+}
+
+.pageButton{
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    outline:none;
+    border:none;
+    border-radius: 5rem;
+    height:5rem;
+    width:5rem;
+    cursor: pointer;
+}
+
+.activeButton{
+    color:#f1f2f6;
+    background-color: #FD7238;
+}
