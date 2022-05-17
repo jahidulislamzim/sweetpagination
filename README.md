@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sweet Pagination
 
 **A ReactJS component to render a pagination.**
@@ -44,3 +45,6 @@ function Items() {
   );
 }
 ```
+=======
+# sweetpagination
+>>>>>>> 8f8a0408ebc20d734882ab428c4f7536828f8a72
