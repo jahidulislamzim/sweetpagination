@@ -1,26 +1,141 @@
-.pagination {
+.sweetPagination {
     display: flex;
     justify-content: center;
 }
 
-.pageItem {
-    padding: 1rem;
+.sweetPagination .paginationUL {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sweetPagination .paginationUL .pageItem {
     list-style: none;
 }
 
-.pageButton{
-    padding: 1rem;
-    font-size: 2rem;
+.sweetPagination .paginationUL .pageItem .pageButton {
+    font-size: 16px;
     font-weight: 600;
-    outline:none;
-    border:none;
     border-radius: 5rem;
-    height:5rem;
-    width:5rem;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
+    margin: 5px;
+    background-color: #ddd;
 }
 
-.activeButton{
-    color:#f1f2f6;
+.sweetPagination .paginationUL .pageItem .pageButton:hover {
+    color: #f1f2f6;
     background-color: #FD7238;
+    fill: #f1f2f6;
+}
+
+.sweetPagination .paginationUL .pageItem .activeButton {
+    color: #f1f2f6;
+    background-color: #FD7238;
+}
+
+/* .pageButton svg{
+    width: 1.5rem;
+} */
+.navigationIcon {
+    width: 12px;
+}
+
+.dottedIcon {
+    width: 20px;
+}
+
+
+/* common css style for all button  */
+.sweetPagination .pageItem .commonButtonStyle {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+/* Button Style 1 */
+
+.style-1 .paginationUL .pageItem .pageButton {
+    margin-left: 5px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    background-color:transparent;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.style-1 .paginationUL .pageItem .pageButton:hover {
+    background-color: #4DAD16;
+    color: #f1f2f6;
+    fill: #f1f2f6;
+}
+
+.style-1 .paginationUL .pageItem .activeButton {
+    background-color: #4DAD16;
+    color: #f1f2f6;
+}
+
+/* Button Style 2 */
+
+.style-2 .paginationUL .pageItem .pageButton {
+    font-size: 14px;
+    margin: -1px;
+    margin-top:5px;
+    border: 1px solid transparent;
+    line-height: 1.5;
+    border-color: #ddd;
+    color: #4285F4;
+    fill: #4285F4;
+    background: #ffffff;
+    border-radius: 0;
+    height: 40px;
+    width: 40px;
+}
+
+.style-2 .paginationUL .pageItem .activeButton {
+    background-color: #4285F4;
+    color: #eee;
+    
+}
+
+.style-2 .paginationUL .pageItem .pageButton:hover {
+    background-color: #eee;
+    color: #4285F4;
+    fill: #4285F4;
+}
+
+.style-2 .paginationUL .pageItem .leftNavigation {
+    -moz-border-radius: 6px 0 0 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px 0 0 6px;
+}
+
+.style-2 .paginationUL .pageItem .rightNavigation {
+    -moz-border-radius: 0 6px 6px 0;
+    -webkit-border-radius: 0;
+    border-radius: 0 6px 6px 0;
+}
+
+
+/* Media Quary  */
+
+@media only screen and (max-width:576px) {
+    .sweetPagination .paginationUL .pageItem .pageButton {
+        width: 25px;
+        height:25px;
+        margin:3px;
+    }
+    .style-2 .paginationUL .pageItem .pageButton{
+        margin: -1px;
+        margin-top:5px; 
+    }
 }

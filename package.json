@@ -1,6 +1,6 @@
 {
-  "name": "sweet-pagination",
-  "version": "0.1.1",
+  "name": "sweetpagination",
+  "version": "1.0.14",
   "description": "This is a complete Pagination React Component Library",
   "main": "index.js",
   "scripts": {
