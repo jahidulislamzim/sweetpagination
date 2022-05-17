@@ -4,11 +4,11 @@
 
 By installing this component and writing only a little bit of code you can obtain this:
 
-#####Common Style
+**Common Style**
 <img src="https://raw.githubusercontent.com/jahidulislamzim/sweetpagination/main/Assets/Common-Style.png" alt="Sweet Pagination Style" />
-#####Common Style
+**Style 1**
 <img src="https://raw.githubusercontent.com/jahidulislamzim/sweetpagination/main/Assets/Style-1.png" alt="Sweet Pagination Style" />
-#####Common Style
+**Style 2**
 <img src="https://raw.githubusercontent.com/jahidulislamzim/sweetpagination/main/Assets/Style-2.png" alt="Sweet Pagination Style" />
 
 
