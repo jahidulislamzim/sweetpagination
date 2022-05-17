@@ -1,12 +1,15 @@
-<<<<<<< HEAD
 # Sweet Pagination
 
 **A ReactJS component to render a pagination.**
 
 By installing this component and writing only a little bit of code you can obtain this:
 
-
-<img src="https://cloud.githubusercontent.com/assets/2084833/24840237/7accb75a-1d1e-11e7-9abb-818431398b91.png" alt="Pagination demo 2" />
+#####Common Style
+<img src="https://raw.githubusercontent.com/jahidulislamzim/sweetpagination/main/Assets/Common-Style.png" alt="Sweet Pagination Style" />
+#####Common Style
+<img src="https://raw.githubusercontent.com/jahidulislamzim/sweetpagination/main/Assets/Style-1.png" alt="Sweet Pagination Style" />
+#####Common Style
+<img src="https://raw.githubusercontent.com/jahidulislamzim/sweetpagination/main/Assets/Style-2.png" alt="Sweet Pagination Style" />
 
 
 ## Installation
@@ -45,6 +48,4 @@ function Items() {
   );
 }
 ```
-=======
-# sweetpagination
->>>>>>> 8f8a0408ebc20d734882ab428c4f7536828f8a72
+Copyright © All rights reserved by [**Jahidul Islam Zim**](https://jahidulislamzim.com/)
