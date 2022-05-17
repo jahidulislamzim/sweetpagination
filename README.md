@@ -5,11 +5,17 @@
 By installing this component and writing only a little bit of code you can obtain this:
 
 **Common Style**
+</br>
 <img src="https://raw.githubusercontent.com/jahidulislamzim/sweetpagination/main/Assets/Common-Style.png" alt="Sweet Pagination Style" />
+</br>
 **Style 1**
+</br>
 <img src="https://raw.githubusercontent.com/jahidulislamzim/sweetpagination/main/Assets/Style-1.png" alt="Sweet Pagination Style" />
+</br>
 **Style 2**
-<img src="https://raw.githubusercontent.com/jahidulislamzim/sweetpagination/main/Assets/Style-2.png" alt="Sweet Pagination Style" />
+</br>
+<img src="https://raw.githubusercontent.com/jahidulislamzim/sweetpagination/main/Assets/Style-2.png" alt="Sweet Pagination Style" width=full/>
+
 
 
 ## Installation
