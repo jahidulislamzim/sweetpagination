@@ -59,7 +59,7 @@ var SweetPagination = function SweetPagination(_ref) {
       navigationState = _useState6[0],
       setNavigationState = _useState6[1];
 
-  var _useState7 = (0, _react.useState)(showPagination),
+  var _useState7 = (0, _react.useState)([1, 2, 3, 4, 5]),
       _useState8 = _slicedToArray(_useState7, 2),
       showPaginationState = _useState8[0],
       setShowPaginationState = _useState8[1];
@@ -73,6 +73,11 @@ var SweetPagination = function SweetPagination(_ref) {
       _useState12 = _slicedToArray(_useState11, 2),
       styleCustom = _useState12[0],
       setStyleCustom = _useState12[1];
+
+  var _useState13 = (0, _react.useState)([1, 2, 3, 4, 5]),
+      _useState14 = _slicedToArray(_useState13, 2),
+      newPageData = _useState14[0],
+      setNewPageData = _useState14[1];
 
   for (var i = 1; i <= Math.ceil(getData.length / dataPerPageState); i++) {
     pageNumbers.push(i);
@@ -126,7 +131,7 @@ var SweetPagination = function SweetPagination(_ref) {
     } else {
       setDataPerPageState(dataPerPage);
     }
-  }, [dataPerPage]); // Navigation State Update
+  }, [dataPerPage, getData]); // Navigation State Update
 
   (0, _react.useEffect)(function () {
     setNavigationState(navigation);
@@ -137,7 +142,17 @@ var SweetPagination = function SweetPagination(_ref) {
   var NewCurrentPageData = getData.slice(indexOfFirstPost, indexOfLastPost);
   (0, _react.useEffect)(function () {
     currentPageData(NewCurrentPageData);
+
+    if (pageNumbers.length > 10) {
+      setNewPageData(NewCurrentPageData);
+    }
   }, [currentPage, dataPerPageState, getData]);
+  (0, _react.useEffect)(function () {
+    if (newPageData.length === 0) {
+      showPaginationState.pop();
+      setCurrentPage(showPaginationState.at(-1));
+    }
+  }, [newPageData.length === 0]);
 
   var handleCurrentPage = function handleCurrentPage(pageNumber) {
     setCurrentPage(pageNumber);

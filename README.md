@@ -22,7 +22,7 @@ Install [`Sweet Pagination`](https://www.npmjs.com/package/sweetpagination) with
 npm i sweetpagination --save
 ```
 
-## Usage
+## Basic Usage
 
 ```javascript
 import React, { useState } from "react";
@@ -42,12 +42,79 @@ function Items() {
 
       <SweetPagination
         currentPageData={setCurrentPageData}
-        dataPerPage={10}
         getData={items}
-        navigation={true}
       />
     </div>
   );
 }
+```
+
+## Change Per-Page Data 
+**If you want, you can show the data as you wish on the page then follow the code below.**
+
+**Add this props `dataPerPage={10}` remember props type always Number.**
+
+```javascript
+      <SweetPagination
+        currentPageData={setCurrentPageData}
+        getData={items}
+        dataPerPage={10}
+      />
+```
+
+## Add Navigation
+
+**If you want to add navigation button then follow the code below.**
+**Add this props `navigation={true}` remember props type always Boolean.**
+
+```javascript
+      <SweetPagination
+        currentPageData={setCurrentPageData}
+        getData={items}
+        dataPerPage={10}
+        navigation={true}
+      />
+```
+
+## Add Pre Loaded Style 
+**If you want, you can add the pre loaded style then follow the code below.**
+**Add this props `getStyle={'style-1'}` remember props type always String.**
+
+```javascript
+      <SweetPagination
+        currentPageData={setCurrentPageData}
+        getData={items}
+        dataPerPage={10}
+        navigation={true}
+        getStyle={'style-1'}
+      />
+```
+## Available Pre-Loaded Style List
+<ol>
+<li>style-1</li>
+<li>style-2</li>
+</ol>
+
+
+## Added You Custom Style
+**If you want, you can add your custom style then follow the code below.**
+**Add this props `getStyle={'style-custom'}` remember props type always String.**
+
+```javascript 
+      <SweetPagination
+        currentPageData={setCurrentPageData}
+        getData={items}
+        dataPerPage={10}
+        navigation={true}
+        getStyle={'style-custom'}
+      />
+```
+
+## Add CSS
+
+```css
+    .style-custom{
+      //add your coustom code here
+    }
 ```
 Copyright © All rights reserved by [**Jahidul Islam Zim**](https://jahidulislamzim.com/)

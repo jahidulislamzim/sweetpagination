@@ -7,13 +7,17 @@ const SweetPagination= ({ dataPerPage, getData, currentPageData, navigation, get
   const [currentPage, setCurrentPage] = useState(1);
   const [dataPerPageState, setDataPerPageState] = useState();
   const [navigationState, setNavigationState] = useState(false);
-  const [showPaginationState, setShowPaginationState] = useState(showPagination);
+  const [showPaginationState, setShowPaginationState] = useState([1,2,3,4,5]);
   const [style, setStyle]=useState('');
   const [styleCustom, setStyleCustom] = useState('');
+  const [newPageData, setNewPageData] = useState([1,2,3,4,5]);
+
+
 
   for (let i = 1; i <= Math.ceil(getData.length / dataPerPageState); i++) {
     pageNumbers.push(i);
   }
+
 
 
   useEffect(() => {
@@ -70,7 +74,7 @@ const SweetPagination= ({ dataPerPage, getData, currentPageData, navigation, get
 
     }
 
-  }, [currentPage,])
+  }, [currentPage])
 
   //  initialize page data
   useEffect(() => {
@@ -79,7 +83,7 @@ const SweetPagination= ({ dataPerPage, getData, currentPageData, navigation, get
     } else {
       setDataPerPageState(dataPerPage);
     }
-  }, [dataPerPage]);
+  }, [dataPerPage, getData]);
 
   // Navigation State Update
   useEffect(() => {
@@ -91,10 +95,28 @@ const SweetPagination= ({ dataPerPage, getData, currentPageData, navigation, get
   const indexOfFirstPost = indexOfLastPost - dataPerPageState;
   const NewCurrentPageData = getData.slice(indexOfFirstPost, indexOfLastPost);
 
+  
 
+
+  
   useEffect(() => {
     currentPageData(NewCurrentPageData);
+    if(pageNumbers.length > 10){
+      setNewPageData(NewCurrentPageData)
+    }
   }, [currentPage, dataPerPageState, getData]);
+
+
+
+useEffect(()=>{
+  if(newPageData.length===0){
+        showPaginationState.pop();
+        setCurrentPage(showPaginationState.at(-1))
+  }
+},[newPageData.length===0])
+
+
+
 
   const handleCurrentPage = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -108,7 +130,6 @@ const SweetPagination= ({ dataPerPage, getData, currentPageData, navigation, get
   const handleDirectLastPage = () => {
     setShowPaginationState([pageNumbers.at(-5), pageNumbers.at(-4), pageNumbers.at(-3), pageNumbers.at(-2), pageNumbers.at(-1)])
   }
-
 
 
   // button style section 
@@ -127,8 +148,6 @@ const SweetPagination= ({ dataPerPage, getData, currentPageData, navigation, get
     }
   
   },[getStyle])
-
-
 
 
 // Main button function 
