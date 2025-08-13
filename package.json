@@ -1,6 +1,6 @@
 {
   "name": "sweetpagination",
-  "version": "1.0.16",
+  "version": "2.0.0",
   "description": "SweetPagination is a lightweight, responsive, and customizable React pagination component library. Works seamlessly with React, Next.js, and JavaScript projects. Ideal for tables, lists, data grids, and UI components. Supports hooks, modern design, and full accessibility.",
   "main": "index.js",
   "files": [
