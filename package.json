@@ -1,28 +1,67 @@
 {
   "name": "sweetpagination",
   "version": "1.0.15",
-  "description": "This is a complete Pagination React Component Library",
+  "description": "SweetPagination is a lightweight, responsive, and customizable React pagination component library. Works seamlessly with React, Next.js, and JavaScript projects. Ideal for tables, lists, data grids, and UI components. Supports hooks, modern design, and full accessibility.",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "Components",
+    "sweetpagination.css",
+    "README.md"
+  ],
   "scripts": {
-    "build": "./node_modules/.bin/babel Components --out-file index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel Components --out-file index.js",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/jahidulislamzim/sweetpagination"
   },
   "keywords": [
-    "Pagination",
-    "SweetPagination",
-    "React Pagination"
+    "pagination",
+    "react-pagination",
+    "react js pagination",
+    "reactjs pagination",
+    "nextjs-pagination",
+    "next.js pagination",
+    "javascript-pagination",
+    "js-pagination",
+    "typescript-pagination",
+    "react table pagination",
+    "react list pagination",
+    "react grid pagination",
+    "react hooks pagination",
+    "react ui pagination",
+    "react component pagination",
+    "responsive pagination",
+    "custom pagination",
+    "sweet-pagination",
+    "data table pagination",
+    "data-grid pagination",
+    "frontend-pagination",
+    "ui-pagination",
+    "infinite scroll pagination",
+    "react-bootstrap pagination",
+    "material-ui pagination",
+    "ant-design pagination",
+    "pagination library",
+    "react pagination library",
+    "react pagination component",
+    "modern pagination"
   ],
-  "author": "Jahidul Islam  <contact@jahidulislamzim.com> (http://jahidulislamzim.com/)",
+  "author": "Jahidul Islam <contact@jahidulislamzim.com> (http://jahidulislamzim.com/)",
   "license": "ISC",
+  "homepage": "https://github.com/jahidulislamzim/sweetpagination#readme",
+  "bugs": {
+    "url": "https://github.com/jahidulislamzim/sweetpagination/issues"
+  },
+  "engines": {
+    "node": ">=12"
+  },
   "devDependencies": {
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
     "@babel/preset-react": "^7.16.7"
   }
-  
 }

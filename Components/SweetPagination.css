@@ -1,141 +1,136 @@
+/* ===== Base Wrapper ===== */
 .sweetPagination {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sweetPagination .paginationUL {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  flex-wrap: nowrap; /* Always keep in one line unless mobile */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .sweetPagination .paginationUL .pageItem {
-    list-style: none;
+  list-style: none;
+  display: inline-flex;
 }
 
+/* ===== Base Button Style ===== */
 .sweetPagination .paginationUL .pageItem .pageButton {
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 5rem;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    margin: 5px;
-    background-color: #ddd;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  gap: 5px;
+  background-color: #ddd;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
 }
 
 .sweetPagination .paginationUL .pageItem .pageButton:hover {
-    color: #f1f2f6;
-    background-color: #FD7238;
-    fill: #f1f2f6;
+  color: #f1f2f6;
+  background-color: #fd7238;
 }
 
 .sweetPagination .paginationUL .pageItem .activeButton {
-    color: #f1f2f6;
-    background-color: #FD7238;
+  color: #f1f2f6;
+  background-color: #fd7238;
 }
 
-/* .pageButton svg{
-    width: 1.5rem;
-} */
-.navigationIcon {
-    width: 12px;
+.sweetPagination .paginationUL .pageItem .pageButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
-.dottedIcon {
-    width: 20px;
+/* ===== Common Reset for All Buttons ===== */
+.commonButtonStyle {
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
 
-
-/* common css style for all button  */
-.sweetPagination .pageItem .commonButtonStyle {
-    outline: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
+/* ===== Style 1: Circular Green ===== */
+.style-1 .paginationUL {
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  list-style: none;
 }
-
-/* Button Style 1 */
 
 .style-1 .paginationUL .pageItem .pageButton {
-    margin-left: 5px;
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    line-height: 30px;
-    background-color:transparent;
-    -moz-border-radius: 100%;
-    -webkit-border-radius: 100%;
-    border-radius: 100%;
+  background-color: transparent;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  border: none;
+  outline: none;
 }
 
-.style-1 .paginationUL .pageItem .pageButton:hover {
-    background-color: #4DAD16;
-    color: #f1f2f6;
-    fill: #f1f2f6;
-}
-
+.style-1 .paginationUL .pageItem .pageButton:hover,
 .style-1 .paginationUL .pageItem .activeButton {
-    background-color: #4DAD16;
-    color: #f1f2f6;
+  background-color: #f7c53e;
+  color: #f1f2f6;
 }
 
-/* Button Style 2 */
+/* ===== Style 2: Square Blue Borders ===== */
+.style-2 .paginationUL {
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  list-style: none;
+}
 
 .style-2 .paginationUL .pageItem .pageButton {
-    font-size: 14px;
-    margin: -1px;
-    margin-top:5px;
-    border: 1px solid transparent;
-    line-height: 1.5;
-    border-color: #ddd;
-    color: #4285F4;
-    fill: #4285F4;
-    background: #ffffff;
-    border-radius: 0;
-    height: 40px;
-    width: 40px;
-}
-
-.style-2 .paginationUL .pageItem .activeButton {
-    background-color: #4285F4;
-    color: #eee;
-    
+  font-size: 14px;
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #4285f4;
+  height: 40px;
+  width: 40px;
+  margin-top: 5px;
+  border-radius: 0;
 }
 
 .style-2 .paginationUL .pageItem .pageButton:hover {
-    background-color: #eee;
-    color: #4285F4;
-    fill: #4285F4;
+  background-color: #eee;
+}
+
+.style-2 .paginationUL .pageItem .activeButton {
+  background-color: #4285f4;
+  color: #eee;
 }
 
 .style-2 .paginationUL .pageItem .leftNavigation {
-    -moz-border-radius: 6px 0 0 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px 0 0 6px;
+  border-radius: 6px 0 0 6px;
 }
 
 .style-2 .paginationUL .pageItem .rightNavigation {
-    -moz-border-radius: 0 6px 6px 0;
-    -webkit-border-radius: 0;
-    border-radius: 0 6px 6px 0;
+  border-radius: 0 6px 6px 0;
 }
 
+/* ===== Mobile Responsiveness ===== */
+@media only screen and (max-width: 576px) {
+  .sweetPagination .paginationUL {
+    flex-wrap: wrap;
+  }
 
-/* Media Quary  */
-
-@media only screen and (max-width:576px) {
-    .sweetPagination .paginationUL .pageItem .pageButton {
-        width: 25px;
-        height:25px;
-        margin:3px;
-    }
-    .style-2 .paginationUL .pageItem .pageButton{
-        margin: -1px;
-        margin-top:5px; 
-    }
+  .sweetPagination .paginationUL .pageItem .pageButton {
+    width: 25px;
+    height: 25px;
+    margin: 3px;
+    font-size: 12px;
+  }
 }
