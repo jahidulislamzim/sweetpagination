@@ -216,7 +216,7 @@ src='https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whats
 alt='jahidul islam zim'
 />
 </a>
-<a href="https://jahidulislamzim.netlify.app" target="_blank">
+<a href="https://jahidulislamzim.vercel.app" target="_blank">
 <img
 src='https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white'
 alt='jahidul islam zim'
